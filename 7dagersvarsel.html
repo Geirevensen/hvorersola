@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Værvarsel for Utvalgte Steder</title>
+  <style>
+    .widget-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .widget {
+      width: 45%;
+      margin: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    @media (max-width: 800px) {
+      .widget {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Værvarsel for Utvalgte Steder</h1>
+  <div class="widget-container">
+    <!-- Widget for Oslo -->
+    <div class="widget">
+      <h2>Oslo-området og østlandet</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-72837/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Kristiansand -->
+    <div class="widget">
+      <h2>Kristiansand og sørlandet</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-2376/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Åndalsnes -->
+    <div class="widget">
+      <h2>Åndalsnes-området og Romsdalen</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-190429/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Bergen -->
+    <div class="widget">
+      <h2>Bergen og vestlandet</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-92416/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Lysekil -->
+    <div class="widget">
+      <h2>Bohuslen og Göteborg-området</h2>
+      <iframe src="https://www.yr.no/nb/innhold/2-2693301/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Henningsvær -->
+    <div class="widget">
+      <h2>Henningsvær og Lofoten</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-276748/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Hemsedal -->
+    <div class="widget">
+      <h2>Hemsedal</h2>
+      <iframe src="https://www.yr.no/nb/innhold/5-25115/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Turtagrø -->
+    <div class="widget">
+      <h2>Jotunheimen</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-162272/table.html"></iframe>
+    </div>
+  </div>
+  <footer>
+    <p>Værdata levert av <a href="https://www.yr.no" target="_blank">Yr.no</a></p>
+  </footer>
+</body>
+</html>
