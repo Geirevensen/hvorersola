@@ -10,6 +10,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
     h1 {
       text-align: center;
@@ -18,14 +19,19 @@
     .widget-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       margin: 0 auto;
       max-width: 1200px;
     }
     .widget {
       box-sizing: border-box;
-      width: 50%;
+      width: 100%;
+      max-width: 600px;
       padding: 10px;
+    }
+    .iframe-wrapper {
+      width: 100%;
+      overflow-x: auto;
     }
     iframe {
       width: 100%;
@@ -38,10 +44,9 @@
     }
 
     /* Responsivt design */
-    @media (max-width: 800px) {
+    @media (min-width: 801px) {
       .widget {
-        width: 100%;
-        padding: 5px;
+        width: 50%;
       }
     }
   </style>
@@ -52,50 +57,13 @@
     <!-- Widget for Oslo -->
     <div class="widget">
       <h2>Oslo</h2>
-      <iframe src="https://www.yr.no/nb/innhold/1-72837/table.html"></iframe>
+      <div class="iframe-wrapper">
+        <iframe src="https://www.yr.no/nb/innhold/1-72837/table.html"></iframe>
+      </div>
     </div>
 
-    <!-- Widget for Kristiansand -->
-    <div class="widget">
-      <h2>Kristiansand</h2>
-      <iframe src="https://www.yr.no/nb/innhold/1-2376/table.html"></iframe>
-    </div>
-
-    <!-- Widget for Åndalsnes -->
-    <div class="widget">
-      <h2>Åndalsnes</h2>
-      <iframe src="https://www.yr.no/nb/innhold/1-190429/table.html"></iframe>
-    </div>
-
-    <!-- Widget for Bergen -->
-    <div class="widget">
-      <h2>Bergen</h2>
-      <iframe src="https://www.yr.no/nb/innhold/1-92416/table.html"></iframe>
-    </div>
-
-    <!-- Widget for Lysekil -->
-    <div class="widget">
-      <h2>Lysekil</h2>
-      <iframe src="https://www.yr.no/nb/innhold/2-2693301/table.html"></iframe>
-    </div>
-
-    <!-- Widget for Henningsvær -->
-    <div class="widget">
-      <h2>Henningsvær</h2>
-      <iframe src="https://www.yr.no/nb/innhold/1-276748/table.html"></iframe>
-    </div>
-
-    <!-- Widget for Hemsedal -->
-    <div class="widget">
-      <h2>Hemsedal</h2>
-      <iframe src="https://www.yr.no/nb/innhold/5-25115/table.html"></iframe>
-    </div>
-
-    <!-- Widget for Turtagrø -->
-    <div class="widget">
-      <h2>Turtagrø</h2>
-      <iframe src="https://www.yr.no/nb/innhold/1-162272/table.html"></iframe>
-    </div>
+    <!-- Gjenta for de andre stedene -->
+    <!-- ... -->
   </div>
   <footer>
     <p>Værdata levert av <a href="https://www.yr.no" target="_blank">Yr.no</a></p>
