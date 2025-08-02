@@ -7,10 +7,10 @@
     .widget-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
     }
     .widget {
-      width: 45%;
+      width: 100%;
       margin: 10px;
     }
     iframe {
@@ -18,9 +18,10 @@
       height: 600px;
       border: none;
     }
-    @media (max-width: 800px) {
+    /* To kolonner på skjermbredder over 800px */
+    @media (min-width: 800px) {
       .widget {
-        width: 100%;
+        width: 45%;
       }
     }
   </style>
@@ -30,7 +31,7 @@
   <div class="widget-container">
     <!-- Widget for Oslo -->
     <div class="widget">
-      <h2>Oslo-området og østlandet</h2>
+      <h2>Oslo og østlandsområdet</h2>
       <iframe src="https://www.yr.no/nb/innhold/1-72837/table.html"></iframe>
     </div>
 
@@ -40,13 +41,13 @@
       <iframe src="https://www.yr.no/nb/innhold/1-2376/table.html"></iframe>
     </div>
 
-    <!-- Widget for Åndalsnes -->
+    <!-- Widget for Åndalsnes og Romsdalen-->
     <div class="widget">
       <h2>Åndalsnes-området og Romsdalen</h2>
       <iframe src="https://www.yr.no/nb/innhold/1-190429/table.html"></iframe>
     </div>
 
-    <!-- Widget for Bergen -->
+    <!-- Widget for Bergen og vestlandet-->
     <div class="widget">
       <h2>Bergen og vestlandet</h2>
       <iframe src="https://www.yr.no/nb/innhold/1-92416/table.html"></iframe>
@@ -66,7 +67,7 @@
 
     <!-- Widget for Hemsedal -->
     <div class="widget">
-      <h2>Hemsedal</h2>
+      <h2>Hemsedal og dalstrøka innafor</h2>
       <iframe src="https://www.yr.no/nb/innhold/5-25115/table.html"></iframe>
     </div>
 
@@ -74,6 +75,18 @@
     <div class="widget">
       <h2>Jotunheimen</h2>
       <iframe src="https://www.yr.no/nb/innhold/1-162272/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Trondheim -->
+    <div class="widget">
+      <h2>Trøndelag og Midt-Norge</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-211102/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Lillehammer -->
+    <div class="widget">
+      <h2>Lillehammer, Hafjell og Sjusjøen</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-143669/table.html"></iframe>
     </div>
   </div>
   <footer>
