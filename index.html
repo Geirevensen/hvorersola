@@ -2,51 +2,25 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Værvarsel for Utvalgte Steder</title>
   <style>
-    /* Grunnleggende stiler */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-    h1 {
-      text-align: center;
-      padding: 20px;
-    }
     .widget-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      margin: 0 auto;
-      max-width: 1200px;
+      justify-content: space-around;
     }
     .widget {
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 600px;
-      padding: 10px;
-    }
-    .iframe-wrapper {
-      width: 100%;
-      overflow-x: auto;
+      width: 45%;
+      margin: 10px;
     }
     iframe {
       width: 100%;
       height: 600px;
       border: none;
     }
-    footer {
-      text-align: center;
-      padding: 10px;
-    }
-
-    /* Responsivt design */
-    @media (min-width: 801px) {
+    @media (max-width: 800px) {
       .widget {
-        width: 50%;
+        width: 100%;
       }
     }
   </style>
@@ -56,14 +30,63 @@
   <div class="widget-container">
     <!-- Widget for Oslo -->
     <div class="widget">
-      <h2>Oslo</h2>
-      <div class="iframe-wrapper">
-        <iframe src="https://www.yr.no/nb/innhold/1-72837/table.html"></iframe>
-      </div>
+      <h2>Oslo og østlandsområdet</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-72837/table.html"></iframe>
     </div>
 
-    <!-- Gjenta for de andre stedene -->
-    <!-- ... -->
+    <!-- Widget for Kristiansand -->
+    <div class="widget">
+      <h2>Kristiansand og sørlandet</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-2376/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Åndalsnes og Romsdalen-->
+    <div class="widget">
+      <h2>Åndalsnes-området og Romsdalen</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-190429/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Bergen og vestlandet-->
+    <div class="widget">
+      <h2>Bergen og vestlandet</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-92416/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Lysekil -->
+    <div class="widget">
+      <h2>Bohuslen og Göteborg-området</h2>
+      <iframe src="https://www.yr.no/nb/innhold/2-2693301/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Henningsvær -->
+    <div class="widget">
+      <h2>Henningsvær og Lofoten</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-276748/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Hemsedal -->
+    <div class="widget">
+      <h2>Hemsedal og dalstrøka innafor</h2>
+      <iframe src="https://www.yr.no/nb/innhold/5-25115/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Turtagrø -->
+    <div class="widget">
+      <h2>Jotunheimen</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-162272/table.html"></iframe>
+    </div>
+
+      <!-- Widget for Trondheim -->
+    <div class="widget">
+      <h2>Trøndelag og Midt-Norge</h2>
+      <iframe src="https://www.yr.no/nb/innhold/5-25115/table.html"></iframe>
+    </div>
+
+    <!-- Widget for Lillehammer -->
+    <div class="widget">
+      <h2>Lillehammer, Hafjell og Sjusjøen</h2>
+      <iframe src="https://www.yr.no/nb/innhold/1-162272/table.html"></iframe>
+    </div>
   </div>
   <footer>
     <p>Værdata levert av <a href="https://www.yr.no" target="_blank">Yr.no</a></p>
